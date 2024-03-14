@@ -13,9 +13,6 @@ aside: false
 
 ### Lagu paTa:
 
-<!-- ![](https://youtu.be/ySn0PQEIvYg) -->
-
-<!-- <iframe width="420" height="315" src="https://youtu.be/ySn0PQEIvYg"></iframe> -->
 <iframe :class="$style.video" src="https://www.youtube.com/embed/ySn0PQEIvYg"></iframe>
 
 <style module>

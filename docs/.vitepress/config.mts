@@ -1,6 +1,5 @@
 import { defineConfig } from "vitepress";
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Virtual Labs",
   titleTemplate: "A MHRD Govt of India Initiative",
@@ -11,7 +10,6 @@ export default defineConfig({
   cleanUrls: true,
 
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     logo: { src: "../vlabs-full-logo.jpg", alt: "Vlabs Full Logo" },
     siteTitle: false,
 
@@ -50,53 +48,29 @@ export default defineConfig({
 
         { text: "Feedback", link: "/feedback" },
       ],
-      "/exp/position-analysis-grashof/": [
-        { text: "Aim", link: "/exp/position-analysis-grashof/aim" },
-        { text: "Theory", link: "/exp/position-analysis-grashof/theory" },
-        { text: "Procedure", link: "/exp/position-analysis-grashof/procedure" },
+      "/exp/position_analysis_grashof/": [
+        { text: "Aim", link: "/exp/position_analysis_grashof/aim" },
+        { text: "Theory", link: "/exp/position_analysis_grashof/theory" },
+        { text: "Procedure", link: "/exp/position_analysis_grashof/procedure" },
         {
           text: "Self Evaluation",
-          link: "/exp/position-analysis-grashof/selfEvaluation",
+          link: "/exp/position_analysis_grashof/selfEvaluation",
         },
         {
           text: "Simulation",
-          link: "/exp/position-analysis-grashof/simulation",
+          link: "/exp/position_analysis_grashof/simulation",
         },
         {
           text: "Assignment",
-          link: "/exp/position-analysis-grashof/assignment",
+          link: "/exp/position_analysis_grashof/assignment",
         },
-        { text: "Quiz", link: "/exp/position-analysis-grashof/quiz" },
-        { text: "Videos", link: "/exp/position-analysis-grashof/videos" },
+        { text: "Quiz", link: "/exp/position_analysis_grashof/quiz" },
+        { text: "Videos", link: "/exp/position_analysis_grashof/videos" },
         {
           text: "References",
-          link: "/exp/position-analysis-grashof/references",
+          link: "/exp/position_analysis_grashof/references",
         },
-        { text: "Feedback", link: "/exp/position-analysis-grashof/feedback" },
-      ],
-      "/exp/velocity-analysis-grashof/": [
-        { text: "Aim", link: "/exp/velocity-analysis-grashof/" },
-        { text: "Theory", link: "/exp/velocity-analysis-grashof/theory" },
-        { text: "Procedure", link: "/exp/velocity-analysis-grashof/procedure" },
-        {
-          text: "Self Evaluation",
-          link: "/exp/velocity-analysis-grashof/selfEvaluation",
-        },
-        {
-          text: "Simulation",
-          link: "/exp/velocity-analysis-grashof/simulation",
-        },
-        {
-          text: "Assignment",
-          link: "/exp/velocity-analysis-grashof/assignment",
-        },
-        { text: "Quiz", link: "/exp/velocity-analysis-grashof/quiz" },
-        { text: "Videos", link: "/exp/velocity-analysis-grashof/videos" },
-        {
-          text: "References",
-          link: "/exp/velocity-analysis-grashof/references",
-        },
-        { text: "Feedback", link: "/exp/velocity-analysis-grashof/feedback" },
+        { text: "Feedback", link: "/exp/position_analysis_grashof/feedback" },
       ],
     },
 

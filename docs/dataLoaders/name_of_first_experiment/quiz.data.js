@@ -1,5 +1,5 @@
 export default {
-  watch: ["../JSON_Data/SelfEvaluationData.json"],
+  watch: ["../../JSON_Data/QuizData.json"],
   load(watchedFiles) {
     return watchedFiles.map((file) => {
       const fileContent = require(file);

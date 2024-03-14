@@ -3,7 +3,7 @@ layout: doc
 aside: false
 ---
 
-# Position analysis of Grashof four bar mechanism
+# <name_of_experiment>
 
 ## Simulation
 

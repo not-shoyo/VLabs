@@ -11,7 +11,6 @@ export default defineConfig({
   cleanUrls: true,
 
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     logo: { src: "../vlabs-full-logo.jpg", alt: "Vlabs Full Logo" },
     siteTitle: false,
 
@@ -50,53 +49,56 @@ export default defineConfig({
 
         { text: "Feedback", link: "/feedback" },
       ],
-      "/exp/position-analysis-grashof/": [
-        { text: "Aim", link: "/exp/position-analysis-grashof/aim" },
-        { text: "Theory", link: "/exp/position-analysis-grashof/theory" },
-        { text: "Procedure", link: "/exp/position-analysis-grashof/procedure" },
+      "/exp/name_of_first_experiment/": [
+        { text: "Aim", link: "/exp/name_of_first_experiment/aim" },
+        { text: "Theory", link: "/exp/name_of_first_experiment/theory" },
+        {
+          text: "Procedure",
+          link: "/exp/name_of_first_experiment/procedure",
+        },
         {
           text: "Self Evaluation",
-          link: "/exp/position-analysis-grashof/selfEvaluation",
+          link: "/exp/name_of_first_experiment/selfEvaluation",
         },
         {
           text: "Simulation",
-          link: "/exp/position-analysis-grashof/simulation",
+          link: "/exp/name_of_first_experiment/simulation",
         },
         {
           text: "Assignment",
-          link: "/exp/position-analysis-grashof/assignment",
+          link: "/exp/name_of_first_experiment/assignment",
         },
-        { text: "Quiz", link: "/exp/position-analysis-grashof/quiz" },
-        { text: "Videos", link: "/exp/position-analysis-grashof/videos" },
+        { text: "Quiz", link: "/exp/name_of_first_experiment/quiz" },
+        { text: "Videos", link: "/exp/name_of_first_experiment/videos" },
         {
           text: "References",
-          link: "/exp/position-analysis-grashof/references",
+          link: "/exp/name_of_first_experiment/references",
         },
-        { text: "Feedback", link: "/exp/position-analysis-grashof/feedback" },
+        { text: "Feedback", link: "/exp/name_of_first_experiment/feedback" },
       ],
-      "/exp/velocity-analysis-grashof/": [
-        { text: "Aim", link: "/exp/velocity-analysis-grashof/" },
-        { text: "Theory", link: "/exp/velocity-analysis-grashof/theory" },
-        { text: "Procedure", link: "/exp/velocity-analysis-grashof/procedure" },
+      "/exp/name_of_second_experiment/": [
+        { text: "Aim", link: "/exp/name_of_second_experiment/" },
+        { text: "Theory", link: "/exp/name_of_second_experiment/theory" },
+        { text: "Procedure", link: "/exp/name_of_second_experiment/procedure" },
         {
           text: "Self Evaluation",
-          link: "/exp/velocity-analysis-grashof/selfEvaluation",
+          link: "/exp/name_of_second_experiment/selfEvaluation",
         },
         {
           text: "Simulation",
-          link: "/exp/velocity-analysis-grashof/simulation",
+          link: "/exp/name_of_second_experiment/simulation",
         },
         {
           text: "Assignment",
-          link: "/exp/velocity-analysis-grashof/assignment",
+          link: "/exp/name_of_second_experiment/assignment",
         },
-        { text: "Quiz", link: "/exp/velocity-analysis-grashof/quiz" },
-        { text: "Videos", link: "/exp/velocity-analysis-grashof/videos" },
+        { text: "Quiz", link: "/exp/name_of_second_experiment/quiz" },
+        { text: "Videos", link: "/exp/name_of_second_experiment/videos" },
         {
           text: "References",
-          link: "/exp/velocity-analysis-grashof/references",
+          link: "/exp/name_of_second_experiment/references",
         },
-        { text: "Feedback", link: "/exp/velocity-analysis-grashof/feedback" },
+        { text: "Feedback", link: "/exp/name_of_second_experiment/feedback" },
       ],
     },
 

@@ -3,10 +3,10 @@ layout: doc
 aside: false
 ---
 
-# Mechanics of Machine I
+# <name_of_lab>
 
-- UG
-  - B.E/B.Tech in Mechanical Engineering, Automobile Engineering, Mechatronics Engineering, Production Engineering, Power Engineering and Aeronautical Engineering.
-  - Diploma in Mechanical Engineering
-- PG
-  - M.Tech/MS in Design Engineering and Manufacturing Engineering.
+- <first_target_audience_category>
+  - <first_target_audience_subcategory>
+  - <second_target_audience_subcategory>
+- <second_target_audience_category>
+  - <first_target_audience_subcategory>

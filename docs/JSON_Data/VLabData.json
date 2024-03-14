@@ -1,0 +1,134 @@
+{
+  "broadAreaName": "Mechanical Engineering",
+  "labName": "Mechanics of Machine 1",
+  "labSections": [
+    {
+      "sectionName": "Introduction",
+      "labDescription": "Mechanics of Machines: is defined as the branch of science, which deals with the study of relative motion between the various parts of a machine, and forces which act on them.\n\n Mechanics of Machines can be subdivided into two branches they are Statics and Dynamics. This lab covers the basic concept of courses on Grashof four bar mechanism, Slider crank mechanism, Scotch Yoke Mechanism, Elliptical Trammel, Tchebichev Straight Line Mechanism, Peaucellier Straight Line Mechanism."
+    },
+    {
+      "sectionName": "Objective",
+      "labObjective": "Lab deals simulations experiments on the mechanics of machines components. These experiments aims at enhancing the knowledge of students on the different mechanisms, to build mathematical models and develop position, velocity and acceleration relations. After completing every simulation experiment in the mechanics of machines lab the students can able to understand basic concepts on different mechanisms."
+    },
+    {
+      "sectionName": "List of experiments",
+      "labExperiments": {
+        "contentType": "orderedList",
+        "listContent": [
+          {
+            "experimentName": "Position analysis of Grashof four bar mechanism",
+            "experimentLink": "https://mm-nitk.vlabs.ac.in/exp/position-analysis-grashof/"
+          },
+          {
+            "experimentName": "Velocity analysis of Grashof four bar mechanism",
+            "experimentLink": "https://mm-nitk.vlabs.ac.in/exp/velocity-analysis-grashof/"
+          },
+          {
+            "experimentName": "Acceleration analysis of Grashof four bar mechanism",
+            "experimentLink": "https://mm-nitk.vlabs.ac.in/exp/acceleration-analysis-grashof/"
+          },
+          {
+            "experimentName": "Position analysis of NonGrashof four bar mechanism",
+            "experimentLink": "https://mm-nitk.vlabs.ac.in/exp/position-analysis-nongrashof/"
+          },
+          {
+            "experimentName": "Velocity analysis of NonGrashof four bar mechanism",
+            "experimentLink": "https://mm-nitk.vlabs.ac.in/exp/velocity-analysis-nongrashof/"
+          },
+          {
+            "experimentName": "Acceleration analysis of NonGrashof four bar mechanism",
+            "experimentLink": "https://mm-nitk.vlabs.ac.in/exp/acceleration-analysis-nongrashof/"
+          },
+          {
+            "experimentName": "Position analysis of Slider crank mechanism",
+            "experimentLink": "https://mm-nitk.vlabs.ac.in/exp/position-analysis-slider-crank/"
+          },
+          {
+            "experimentName": "Velocity analysis of Slider crank mechanism",
+            "experimentLink": "https://mm-nitk.vlabs.ac.in/exp/velocity-analysis-slider-crank/"
+          },
+          {
+            "experimentName": "Acceleration analysis of Slider crank mechanism",
+            "experimentLink": "https://mm-nitk.vlabs.ac.in/exp/acceleration-analysis-slider-crank/"
+          },
+          {
+            "experimentName": "Position analysis of Slider crank mechanism with Offset",
+            "experimentLink": "https://mm-nitk.vlabs.ac.in/exp/position-analysis-slider-crank-offset/"
+          },
+          {
+            "experimentName": "Position analysis of Scotch Yoke Mechanism",
+            "experimentLink": "https://mm-nitk.vlabs.ac.in/exp/position-analysis-scotch-yoke/"
+          },
+          {
+            "experimentName": "Velocity analysis of Scotch Yoke Mechanism",
+            "experimentLink": "https://mm-nitk.vlabs.ac.in/exp/velocity-analysis-scotch-yoke/"
+          },
+          {
+            "experimentName": "Acceleration analysis of Scotch Yoke Mechanism",
+            "experimentLink": "https://mm-nitk.vlabs.ac.in/exp/acceleration-analysis-scotch-yoke/"
+          },
+          {
+            "experimentName": "Position analysis of Elliptical Trammel",
+            "experimentLink": "https://mm-nitk.vlabs.ac.in/exp/position-analysis-elliptical-trammel/"
+          }
+        ]
+      }
+    },
+    {
+      "sectionName": "Target Audience",
+      "labAudience": {
+        "contentType": "unOrderedList",
+        "listContent": [
+          {
+            "category": "UG",
+            "subCategories": {
+              "contentType": "unOrderedList",
+              "listContent": [
+                "B.E/B.Tech in Mechanical Engineering, Automobile Engineering, Mechatronics Engineering, Production Engineering, Power Engineering and Aeronautical Engineering.",
+                "Diploma in Mechanical Engineering"
+              ]
+            }
+          },
+          {
+            "category": "PG",
+            "subCategories": {
+              "contentType": "unOrderedList",
+              "listContent": [
+                "M.Tech/MS in Design Engineering and Manufacturing Engineering."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sectionName": "Course Allignment",
+      "courseAllignment": {
+        "description": "The syllabi of this lab aligns to the following universities in India.",
+        "alignedUniversities": {
+          "contentType": "orderedList",
+          "listContent": [
+            "Visvesvaraya Technological University",
+            "Kerala Technological University",
+            "Anna University",
+            "Goa University",
+            "Cochin University of Science and Technology (CUSAT)",
+            "Dr. A.P.J. Abdul Kalam Technical University, Lucknow"
+          ]
+        }
+      }
+    },
+    {
+      "sectionName": "Feedback",
+      "feedbackContent": {
+        "feedbackIntroduction": "Dear User,",
+        "feedbackInformation": "Thanks for using Virtual Labs. Your opinion is valuable to us. To help us improve, we'd like to ask you a few questions about your experience. It will only take 3 minutes and your answers will help us make Virtual Labs better for you and other users.",
+        "feedbackCallToAction": {
+          "buttonText": "Share Your Experience",
+          "buttonLink": "https://feedback.vlabs.ac.in/"
+        },
+        "feedbackConclusion": "Thanks for your time !\n\nThe Virtual Labs Team"
+      }
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "experimentName": "Position analysis of Grashof four bar mechanism",
+  "experimentSections": [
+    {
+      "sectionName": "Aim",
+      "aimDescription": "To determine the position of four bar linkages given, the input is crank (ω) hence find out (θ4) and transmission angle (γ)."
+    },
+    {
+      "sectionName": "Theory",
+      "theorySubSections": [
+        {
+          "subSectionName": "Introduction",
+          "subSectionContents": [
+            "A four bar mechanism consists of four rigid link which are linked in the form of quadrilateral by four pin joints. A link that makes complete revolution is called crank, the link opposite to the fixed link is the coupler and forth link is a lever or rocker if oscillates or another crank if rotates.",
+            {
+              "contentType": "image",
+              "imageUrl": "https://mm-nitk.vlabs.ac.in/exp/position-analysis-grashof/images/pos1.png",
+              "imageCaption": "Figure 1: Four bar mechanism"
+            }
+          ]
+        },
+        {
+          "subSectionName": "Position Analysis of Four Bar Mechanism",
+          "subSectionContents": [
+            {
+              "contentType": "image",
+              "imageUrl": "https://mm-nitk.vlabs.ac.in/exp/position-analysis-grashof/images/pos3.png",
+              "imageCaption": "Figure 2: Nomenclature of four bar mechanism"
+            },
+            "Grashoff's Law: For a planar four bar linkage, the sum of the shortest (s) and longest (l) links cannot be greater than the sum of the remaining (p,q) links if there is to be continuous relative rotation between two members.",
+            "Inversions: A mechanism has been defined above as a kinematic chain in which one of the links is fixed. From the four bar mechanism, different versions of each of them can be obtained by fixing any one of the links p, q, l or s. Such different versions, which can be obtained by fixing any of the different links, are called its \"Inversions\". Many a time, a particular inversion of a mechanism may give rise to different mechanisms of practical utility, when the proportions of the link lengths are changed. By this principle of inversion of a fourbar chain, several useful mechanisms can be obtained. Mainly there are three inversions of four bar mechanisms, which are obtained by fixing different links of the kinematic chain as shown in the figure below. They are:",
+            {
+              "contentType": "orderedList",
+              "listContent": [
+                "Double Crank Mechanism",
+                "Crank Rocker Mechanism",
+                "Double Rocker Mechanism"
+              ]
+            },
+            {
+              "contentType": "image",
+              "imageUrl": "https://mm-nitk.vlabs.ac.in/exp/position-analysis-grashof/images/pos4.png",
+              "imageCaption": "Figure 3: Inversions of Four bar mechanism"
+            }
+          ]
+        },
+        {
+          "subSectionName": "Determination of Position of any point on FourBar",
+          "subSectionContents": [
+            {
+              "contentType": "image",
+              "imageUrl": "https://mm-nitk.vlabs.ac.in/exp/position-analysis-grashof/images/pos5.png",
+              "imageCaption": "Figure 4: Configuration of four bar mechanism"
+            },
+            "By using relations in geometry and trigonometry the position of any point on the four bar mechanism can be found out for a given value of input angle θ2 when the four link lengths are known",
+            "At a given value of θ2 there can be two possible configurations of the four bar mechanism as shown in above figure. The following vector loop equation can be used to define the four bar mechanism",
+            {
+              "contentType": "image",
+              "imageUrl": "https://mm-nitk.vlabs.ac.in/exp/position-analysis-grashof/images/pos6.png"
+            },
+            "Separating the above equation into real and imaginary parts leads to two equations which can be solved to find the value of two unknowns θ3 and θ4"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionName": "Procedure",
+      "sectionContents": [
+        "Read the value of link lengths and the input angle θ2, then use the formulae given below to calculate the value of unknowns θ3, θ4 and γ",
+        {
+          "contentType": "image",
+          "imageUrl": "https://mm-nitk.vlabs.ac.in/exp/position-analysis-grashof/images/pos7.png"
+        },
+        "For special cases of positioning (e.g. when two link are aligned) use simple geometry and trigonometry relations to find out the solution"
+      ]
+    },
+    {
+      "sectionName": "Self Evaluation",
+      "sectionContents": [
+        {
+          "contentType": "questionAnswer",
+          "question": "Grashof's condition is the necessary condition for?",
+          "answers": {
+            "contentType": "unOrderedList",
+            "listContent": [
+              "a: Continuous motion",
+              "b: Non Continuous motion",
+              "c: Intermittent motion",
+              "d: None of these"
+            ]
+          }
+        },
+        {
+          "contentType": "questionAnswer",
+          "question": "Which of the following is the inversion of four bar chain?",
+          "answers": {
+            "contentType": "unOrderedList",
+            "listContent": [
+              "a: Beam engine",
+              "b: Pendulum pump",
+              "c: Oscillating cylinder",
+              "d: None of these"
+            ]
+          }
+        },
+        {
+          "contentType": "questionAnswer",
+          "question": "The links in a four bar mechanism is ?",
+          "answers": {
+            "contentType": "unOrderedList",
+            "listContent": [
+              "a: Binary link",
+              "b: Ternary link",
+              "c: Flexible link",
+              "d: None of these"
+            ]
+          }
+        },
+        {
+          "contentType": "questionAnswer",
+          "question": "Coupled wheel of locomotive is an inversion of",
+          "answers": {
+            "contentType": "unOrderedList",
+            "listContent": [
+              "a: Four bar mechanism",
+              "b: Double slider crank mechanism",
+              "c: Slider crank mechanism",
+              "d: Six bar mechanism"
+            ]
+          }
+        },
+        {
+          "contentType": "questionAnswer",
+          "question": "Watts indicator is an inversion of",
+          "answers": {
+            "contentType": "unOrderedList",
+            "listContent": [
+              "a: Four bar mechanism",
+              "b: Double slider crank mechanism",
+              "c: Slider crank mechanism",
+              "d: Six bar mechanism"
+            ]
+          }
+        },
+        {
+          "contentType": "questionAnswer",
+          "question": "The part of IC engine which acts as coupler is",
+          "answers": {
+            "contentType": "unOrderedList",
+            "listContent": [
+              "a: Connecting rod",
+              "b: Piston",
+              "c: Piston ring",
+              "d: Fly wheel"
+            ]
+          }
+        },
+        {
+          "contentType": "questionAnswer",
+          "question": "Beam engine is",
+          "answers": {
+            "contentType": "unOrderedList",
+            "listContent": [
+              "a: Crank and lever mechanism",
+              "b: Crank and crank mechanism",
+              "c: Double crank mechanism",
+              "d: None of these"
+            ]
+          }
+        },
+        {
+          "contentType": "questionAnswer",
+          "question": "In the beam engine which link connects piston rod coupler and frame?",
+          "answers": {
+            "contentType": "unOrderedList",
+            "listContent": [
+              "a: Lever",
+              "b: Crank",
+              "c: Coupler",
+              "d: None of these"
+            ]
+          }
+        },
+        {
+          "contentType": "button",
+          "buttonText": "Submit Quiz"
+        }
+      ]
+    },
+    { "sectionName": "Simulation", "sectionContents": ["TBD"] },
+    {
+      "sectionName": "Assignment",
+      "sectionContents": [
+        {
+          "contentType": "orderedList",
+          "listContent": [
+            "Find a combination of link lengths where motion of a point on output link is one quarter of a circle."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionName": "Quiz",
+      "sectionContents": [
+        {
+          "contentType": "questionAnswer",
+          "question": "Which of the following is possible for Input and Output links in case of Grashof linkage?",
+          "answers": {
+            "contentType": "unOrderedList",
+            "listContent": [
+              "a: Crank-Crank",
+              "b: Crank-Rocker",
+              "c: Rocker-Rocker",
+              "d: All"
+            ]
+          }
+        },
+        {
+          "contentType": "questionAnswer",
+          "question": "In Drag Link Mechanism",
+          "answers": {
+            "contentType": "unOrderedList",
+            "listContent": [
+              "a: Shortest link is fixed",
+              "b: Longest link is fixed",
+              "c: One other than shortest or longest link is fixed",
+              "d: Any link can be fixed"
+            ]
+          }
+        },
+        {
+          "contentType": "questionAnswer",
+          "question": "If longest link is fixed and shortest link is coupler which type of four bar mechanism would be formed?",
+          "answers": {
+            "contentType": "unOrderedList",
+            "listContent": [
+              "a: Double Rocker",
+              "b: Crank Rocker",
+              "c: Double Crank",
+              "d: Can't be determined"
+            ]
+          }
+        },
+        {
+          "contentType": "questionAnswer",
+          "question": "According to Grashof Condition",
+          "answers": {
+            "contentType": "unOrderedList",
+            "listContent": [
+              "a: s+l ≥ p+q",
+              "b: s-l ≥ p-q",
+              "c: s+l ≤ p+q",
+              "d: s-l ≤ p-q"
+            ]
+          }
+        },
+        {
+          "contentType": "questionAnswer",
+          "question": "If Grashof condition is met, which link definitely can complete a rotation",
+          "answers": {
+            "contentType": "unOrderedList",
+            "listContent": [
+              "a: Shortest Link",
+              "b: Longest Link",
+              "c: Shorter of the remaining links",
+              "d: Longer of the remaining two links"
+            ]
+          }
+        },
+        {
+          "contentType": "button",
+          "buttonText": "Submit Quiz"
+        }
+      ]
+    },
+
+    {
+      "sectionName": "Videos",
+      "videosSubSections": [
+        {
+          "subSectionName": "NPTEL",
+          "subSectionContents": [
+            {
+              "contentType": "link",
+              "linkUrl": "https://mm-nitk.vlabs.ac.in/exp/position-analysis-grashof/video%20src=%22https://www.youtube.com/embed/MJeRFzs4oRU%22%20%20allowfullscreen",
+              "linkText": "Kinematics of Machines"
+            }
+          ]
+        },
+        {
+          "subSectionName": "Lagu paTa",
+          "subSectionContents": [
+            {
+              "contentType": "youtubeVideo",
+              "videoUrl": "https://youtu.be/ySn0PQEIvYg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionName": "References",
+      "sectionContents": [
+        {
+          "contentType": "unOrderedList",
+          "listContents": [
+            "Robert L Norton (2011), Design of Machinery (5th Ed.), McGraw Hill Publication",
+            "Uicker J.J., Pennock G.R. and Shigley J.E. (2009), Theory of Machines and Mechanisms (3rd Ed.), Oxford University Press",
+            "S S Rattan (2014), Theory of Machines (4th Ed.), McGraw Hill Education (India) Private Limited"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionName": "Feedback",
+      "feedbackContent": {
+        "feedbackIntroduction": "Dear User,",
+        "feedbackInformation": "Thanks for using Virtual Labs. Your opinion is valuable to us. To help us improve, we'd like to ask you a few questions about your experience. It will only take 3 minutes and your answers will help us make Virtual Labs better for you and other users.",
+        "feedbackCallToAction": {
+          "buttonText": "Share Your Experience",
+          "buttonLink": "https://feedback.vlabs.ac.in/"
+        },
+        "feedbackConclusion": "Thanks for your time !\n\nThe Virtual Labs Team"
+      }
+    }
+  ]
+}

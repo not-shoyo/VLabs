@@ -1,29 +1,56 @@
 {
-  "hash": "40762b9c",
+  "hash": "324174e1",
   "configHash": "2ee19971",
-  "lockfileHash": "29b0e3bf",
-  "browserHash": "80e78563",
+  "lockfileHash": "f1faf696",
+  "browserHash": "7fefb710",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "b44aa66c",
+      "fileHash": "3a5643a9",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "66a97fc5",
+      "fileHash": "9d225d3f",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "c49c5aa4",
+      "fileHash": "093f9d3b",
+      "needsInterop": false
+    },
+    "three": {
+      "src": "../../../../node_modules/three/build/three.module.js",
+      "file": "three.js",
+      "fileHash": "fc82e228",
+      "needsInterop": false
+    },
+    "three/examples/jsm/controls/OrbitControls.js": {
+      "src": "../../../../node_modules/three/examples/jsm/controls/OrbitControls.js",
+      "file": "three_examples_jsm_controls_OrbitControls__js.js",
+      "fileHash": "03bd7b5a",
+      "needsInterop": false
+    },
+    "three/examples/jsm/renderers/CSS2DRenderer.js": {
+      "src": "../../../../node_modules/three/examples/jsm/renderers/CSS2DRenderer.js",
+      "file": "three_examples_jsm_renderers_CSS2DRenderer__js.js",
+      "fileHash": "da7eaf10",
+      "needsInterop": false
+    },
+    "dat.gui": {
+      "src": "../../../../node_modules/dat.gui/build/dat.gui.module.js",
+      "file": "dat__gui.js",
+      "fileHash": "3c1b4e0e",
       "needsInterop": false
     }
   },
   "chunks": {
+    "chunk-Q2PVISAP": {
+      "file": "chunk-Q2PVISAP.js"
+    },
     "chunk-XJZ34XUT": {
       "file": "chunk-XJZ34XUT.js"
     }

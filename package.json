@@ -6,5 +6,9 @@
   },
   "devDependencies": {
     "vitepress": "^1.0.0-rc.44"
+  },
+  "dependencies": {
+    "dat.gui": "^0.7.9",
+    "three": "^0.163.0"
   }
 }

@@ -84,7 +84,7 @@ p:has(img) {
 }
 
 /* To make image centered */
-p:has(img) > img {
+p:has(img)>img {
   margin: 0 auto;
 }
 
@@ -94,7 +94,7 @@ p:has(img) > img {
 }
 
 /* To fix On This Page Dropdown in Mobile (M) & Mobile (S) View */
-.VPLocalNavOutlineDropdown .items > .outline {
+.VPLocalNavOutlineDropdown .items>.outline {
   overflow-x: hidden;
 }
 
@@ -125,9 +125,7 @@ p:has(img) > img {
 @media (min-width: 1440px) {
   .footerInformationContainer {
     padding-right: calc((100vw - var(--vp-layout-max-width)) / 2);
-    padding-left: calc(
-      (100vw - var(--vp-layout-max-width)) / 2 + var(--vp-sidebar-width) + 24px
-    );
+    padding-left: calc((100vw - var(--vp-layout-max-width)) / 2 + var(--vp-sidebar-width) + 24px);
   }
 }
 
@@ -165,4 +163,38 @@ a.footerInformation {
 
 a.footerInformation:hover {
   color: var(--vp-c-brand-1);
+}
+
+/* Control the Simulation Flexbox */
+.simulationsGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.simulationContainerTemplate {
+  position: relative;
+  flex: 1;
+  height: 200px;
+  flex-shrink: 1;
+  overflow-x: hidden;
+}
+
+.columnLayout {
+  flex-direction: column;
+}
+
+.columnLayout>.simulationContainerTemplate {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Control z index of Dat.GUI */
+.dg {
+  z-index: 150 !important;
 }

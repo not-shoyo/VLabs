@@ -9,6 +9,10 @@ import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRe
 
 console.log("inside Simulation Component Script")
 
+
+// Determine if it's a mobile layout
+const isMobile = ref(false);
+
 if (typeof window !== "undefined") {
   console.log("When we get window")
 
@@ -31,8 +35,6 @@ if (typeof window !== "undefined") {
       screenSize.height = window.innerHeight;
     };
 
-    // Determine if it's a mobile layout
-    const isMobile = ref(false);
 
     const variableOptions = {
       edges: {

@@ -6,7 +6,7 @@ export default defineConfig({
   description: "A MHRD Govt of India Initiative",
   head: [["link", { rel: "icon", href: "/Vlabs/favicon.ico" }]],
   lang: "en-US",
-  base: "/VLabs/",
+  base: "/",
 
   cleanUrls: true,
   ignoreDeadLinks: true,

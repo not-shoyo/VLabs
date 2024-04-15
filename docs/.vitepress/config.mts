@@ -6,7 +6,7 @@ export default defineConfig({
   description: "A MHRD Govt of India Initiative",
   head: [["link", { rel: "icon", href: "../favicon.ico" }]],
   lang: "en-US",
-  base: "/",
+  base: "/repo/",
   cleanUrls: true,
 
   themeConfig: {

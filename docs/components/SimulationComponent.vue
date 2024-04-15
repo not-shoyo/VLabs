@@ -1,4 +1,8 @@
 <script setup>
+if (!(typeof window !== "undefined")) {
+  return
+}
+
 import { ref, onMounted, reactive } from "vue";
 
 import * as THREE from 'three';

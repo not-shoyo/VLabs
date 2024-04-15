@@ -1,11 +1,11 @@
 <script setup>
-import { ref, onMounted, reactive } from "vue";
+import { ref, onMounted, reactive, watch } from "vue";
 
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js';
 
-import { GUI } from "dat.gui";
+// import { GUI } from "dat.gui";
 
 console.log("inside Simulation Component Script")
 
@@ -14,100 +14,64 @@ const isMobile = ref(false);
 const simulationContainer1 = ref(null);
 const simulationContainer2 = ref(null);
 
+var gui = null;
+var haveGui = ref(false);
+
+var simulationContainerWidth = null;
+var simulationContainerHeight = null;
+
 if (typeof window !== "undefined") {
   console.log("When we get window")
 
-  // import("dat.gui").then(({ GUI }) => {
+  import("dat.gui").then(({ GUI }) => {
 
-  console.log("When we get GUI")
+    console.log("When we get GUI")
 
-  const gui = new GUI();
-
-  const screenSize = reactive({
-    width: window.innerWidth,
-    height: window.innerHeight
+    gui = new GUI();
+    haveGui.value = true;
   });
+}
 
-  const updateLayout = () => {
-    screenSize.width = window.innerWidth;
-    screenSize.height = window.innerHeight;
-  };
+console.log("here")
+
+watch(haveGui, (value) => {
+  console.log("in here before checking")
+  if (value) {
+
+    console.log("checked")
+
+    const screenSize = reactive({
+      width: window.innerWidth,
+      height: window.innerHeight
+    });
+
+    const updateLayout = () => {
+      screenSize.width = window.innerWidth;
+      screenSize.height = window.innerHeight;
+    };
 
 
-  const variableOptions = {
-    edges: {
-      r1: 80,
-      r2: 60,
-      r3: 80,
-      r4: 60
-    },
-    angles: {
-      theta2: 90
-    },
-    speed: {
-      omega2: 0.3
-    },
-    simulationControls: {
-      pauseSimulation: false
-    }
-  }
 
-  var edgesGui = gui.addFolder("Edge Lengths");
-  edgesGui.add(variableOptions.edges, "r1", 60, 100).name("R1 (AD)").step(1);
-  edgesGui.add(variableOptions.edges, "r2", 20, 100).name("R2 (AB)").step(1);
-  edgesGui.add(variableOptions.edges, "r3", 60, 100).name("R3 (BC)").step(1);
-  edgesGui.add(variableOptions.edges, "r4", 60, 100).name("R4 (CD)").step(1);
-  edgesGui.hide();
 
-  // var anglesGui = gui.addFolder("Angles");
-  // anglesGui.add(variableOptions.angles, "theta2", 0, 360).name("θ2");
-  // anglesGui.open();
+    var edgesGui = gui.addFolder("Edge Lengths");
+    edgesGui.add(variableOptions.edges, "r1", 60, 100).name("R1 (AD)").step(1);
+    edgesGui.add(variableOptions.edges, "r2", 20, 100).name("R2 (AB)").step(1);
+    edgesGui.add(variableOptions.edges, "r3", 60, 100).name("R3 (BC)").step(1);
+    edgesGui.add(variableOptions.edges, "r4", 60, 100).name("R4 (CD)").step(1);
+    edgesGui.hide();
 
-  var speedGui = gui.addFolder("Speed");
-  speedGui.add(variableOptions.speed, "omega2", 0.2, 1.8).name("ω2").listen();
-  speedGui.open();
+    // var anglesGui = gui.addFolder("Angles");
+    // anglesGui.add(variableOptions.angles, "theta2", 0, 360).name("θ2");
+    // anglesGui.open();
 
-  var r1 = variableOptions.edges.r1, r2 = variableOptions.edges.r2, r3 = variableOptions.edges.r3, r4 = variableOptions.edges.r4;
-  var theta2 = variableOptions.angles.theta2;
-  var omega2 = variableOptions.speed.omega2;
+    var speedGui = gui.addFolder("Speed");
+    speedGui.add(variableOptions.speed, "omega2", 0.2, 1.8).name("ω2").listen();
+    speedGui.open();
 
-  var theta3 = 0, theta4 = 0; // All angles in Degrees. (mention the specification in the script like here)
-  var rotstatus = 1; // direction of rotation (-1 for clockwise, 1 for counterclockwise)
+    var r1 = variableOptions.edges.r1, r2 = variableOptions.edges.r2, r3 = variableOptions.edges.r3, r4 = variableOptions.edges.r4;
+    var theta2 = variableOptions.angles.theta2;
+    var omega2 = variableOptions.speed.omega2;
 
-  //function to check whether links satisfy grashof condition
-  function checkGrashof() {
-    var links = new Array(4);
-    links[0] = variableOptions.edges.r1;
-    links[1] = variableOptions.edges.r2;
-    links[2] = variableOptions.edges.r3;
-    links[3] = variableOptions.edges.r4;
-    links.sort((p, q) => { return p - q });
-    var s = links[0];
-    var p = links[1];
-    var q = links[2];
-    var l = links[3];
-    if (s + l > p + q) {
-      // console.log("failed")
-      return false;
-    }
-    else {
-      // console.log("passed")
-      return true;
-    }
-  }
-
-  console.log("Not mounted yet")
-
-  onMounted(() => {
-
-    console.log("Got mounted")
-
-    // Determine if it's a mobile layout
-    const isMobile = ref(false);
-
-    // Constants for container dimensions
-    const simulationContainerWidth = simulationContainer1.value.offsetWidth;
-    const simulationContainerHeight = simulationContainer1.value.offsetHeight;
 
     // Global scaling factor
     const scaleFactor = 200 / 60; // Example scaling factor
@@ -469,14 +433,76 @@ if (typeof window !== "undefined") {
       }
     }
 
-    console.log("going to init inside mount")
+    console.log("about to init after getting gui")
 
     // Initialize everything
     init();
-  })
+  }
+})
 
-  // });
+
+var theta3 = 0, theta4 = 0; // All angles in Degrees. (mention the specification in the script like here)
+var rotstatus = 1; // direction of rotation (-1 for clockwise, 1 for counterclockwise)
+
+const variableOptions = {
+  edges: {
+    r1: 80,
+    r2: 60,
+    r3: 80,
+    r4: 60
+  },
+  angles: {
+    theta2: 90
+  },
+  speed: {
+    omega2: 0.3
+  },
+  simulationControls: {
+    pauseSimulation: false
+  }
 }
+
+//function to check whether links satisfy grashof condition
+function checkGrashof() {
+  var links = new Array(4);
+  links[0] = variableOptions.edges.r1;
+  links[1] = variableOptions.edges.r2;
+  links[2] = variableOptions.edges.r3;
+  links[3] = variableOptions.edges.r4;
+  links.sort((p, q) => { return p - q });
+  var s = links[0];
+  var p = links[1];
+  var q = links[2];
+  var l = links[3];
+  if (s + l > p + q) {
+    // console.log("failed")
+    return false;
+  }
+  else {
+    // console.log("passed")
+    return true;
+  }
+}
+
+console.log("Not mounted yet")
+
+onMounted(() => {
+
+  console.log("Got mounted")
+
+  // Determine if it's a mobile layout
+  const isMobile = ref(false);
+
+  // Constants for container dimensions
+  simulationContainerWidth = simulationContainer1.value.offsetWidth;
+  simulationContainerHeight = simulationContainer1.value.offsetHeight;
+
+  console.log("about to leave mount")
+
+})
+
+// });
+// }
 
 console.log("Outside window if")
 

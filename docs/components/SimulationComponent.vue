@@ -324,10 +324,15 @@ watch(haveGui, (value) => {
       // Calculate desired zoom level based on the new canvas size
       const aspectRatio = width / height;
       const verticalFov = 45; // Initial vertical FOV
-      const horizontalFov = verticalFov * aspectRatio;
+      const horizontalFov = (verticalFov + (isMobile.value ? 2 : 0)) * aspectRatio;
       const fov = Math.max(verticalFov, horizontalFov);
 
       camera.fov = fov;
+      if (isMobile.value) {
+        camera.zoom = 0.35
+      } else {
+        camera.zoom = 0.75
+      }
       camera.updateProjectionMatrix();
     }
 
@@ -455,7 +460,7 @@ const variableOptions = {
     theta2: 90
   },
   speed: {
-    omega2: 0.3
+    omega2: 0.3,
   },
   simulationControls: {
     pauseSimulation: false

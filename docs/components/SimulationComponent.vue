@@ -7,9 +7,14 @@ import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRe
 
 // import { GUI } from "dat.gui";
 
+console.log("inside Simulation Component Script")
+
 if (typeof window !== "undefined") {
+  console.log("When we get window")
+
   import("dat.gui").then(({ GUI }) => {
 
+    console.log("When we get GUI")
 
     const gui = new GUI();
 
@@ -91,7 +96,11 @@ if (typeof window !== "undefined") {
       }
     }
 
+    console.log("Not mounted yet")
+
     onMounted(() => {
+
+      console.log("Got mounted")
 
       // Determine if it's a mobile layout
       isMobile.value = screenSize.width <= 425;
@@ -374,6 +383,9 @@ if (typeof window !== "undefined") {
 
       // Main function to initialize everything
       function init() {
+
+        console.log("inside init")
+
         const scene1 = setupScene();
         const scene2 = setupScene();
 
@@ -391,6 +403,9 @@ if (typeof window !== "undefined") {
         // scene2.add(axesHelper2);
 
         if (checkGrashof()) {
+
+          console.log("first is a grashof")
+
           // First group of circles
           const circles1 = setupCircles(scene1, { x: -scaleDist((-variableOptions.edges.r2 + variableOptions.edges.r1 + variableOptions.edges.r4) / 2), y: 0 }); // used to be just -120 instead of startingPointOfA
           const textLabels1 = setupTextLabels(scene1, circles1);
@@ -454,12 +469,16 @@ if (typeof window !== "undefined") {
         }
       }
 
+      console.log("going to init inside mount")
+
       // Initialize everything
       init();
     })
 
   });
 }
+
+console.log("Outside window if")
 
 </script>
 

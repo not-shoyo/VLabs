@@ -12,7 +12,7 @@ export default defineConfig({
   ignoreDeadLinks: true,
 
   themeConfig: {
-    logo: { src: "../vlabs-full-logo.jpg", alt: "Vlabs Full Logo" },
+    logo: { src: "/VLabs/vlabs-full-logo.jpg", alt: "Vlabs Full Logo" },
     siteTitle: false,
 
     nav: [

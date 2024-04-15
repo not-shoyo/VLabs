@@ -4,9 +4,9 @@ export default defineConfig({
   title: "Virtual Labs",
   titleTemplate: "A MHRD Govt of India Initiative",
   description: "A MHRD Govt of India Initiative",
-  head: [["link", { rel: "icon", href: "/Vlabs/favicon.ico" }]],
+  head: [["link", { rel: "icon", href: "/VLabs/favicon.ico" }]],
   lang: "en-US",
-  base: "/",
+  base: "/VLabs/",
 
   cleanUrls: true,
   ignoreDeadLinks: true,

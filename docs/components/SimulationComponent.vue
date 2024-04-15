@@ -5,7 +5,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js';
 
-import { GUI } from "dat.gui";
+// import { GUI } from "dat.gui";
 
 console.log("inside Simulation Component Script")
 
@@ -104,7 +104,7 @@ if (typeof window !== "undefined") {
     console.log("Got mounted")
 
     // Determine if it's a mobile layout
-    isMobile.value = screenSize.width <= 425;
+    const isMobile = ref(false);
 
     // Constants for container dimensions
     const simulationContainerWidth = simulationContainer1.value.offsetWidth;

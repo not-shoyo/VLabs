@@ -7,7 +7,9 @@ export default defineConfig({
   head: [["link", { rel: "icon", href: "../favicon.ico" }]],
   lang: "en-US",
   base: "/repo/",
+  
   cleanUrls: true,
+  ignoreDeadLinks: true
 
   themeConfig: {
     logo: { src: "../vlabs-full-logo.jpg", alt: "Vlabs Full Logo" },
